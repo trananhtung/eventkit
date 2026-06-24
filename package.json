@@ -1,0 +1,53 @@
+{
+  "name": "eventkit",
+  "version": "0.1.0",
+  "description": "Zero-dependency typed async EventEmitter: compile-time event types, async dispatch (await all handlers), Promise-based once(), event history/replay, wildcard listeners. Port of Java Guava EventBus / Python blinker.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --forceExit",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "keywords": [
+    "eventemitter",
+    "event-emitter",
+    "typed",
+    "async",
+    "event-bus",
+    "pubsub",
+    "signals",
+    "history",
+    "replay",
+    "typescript",
+    "zero-dependencies"
+  ],
+  "author": "trananhtung",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trananhtung/eventkit.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.11",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  }
+}
