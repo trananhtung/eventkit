@@ -1,5 +1,5 @@
 {
-  "name": "eventkit",
+  "name": "@billdaddy/eventkit",
   "version": "0.1.0",
   "description": "Zero-dependency typed async EventEmitter: compile-time event types, async dispatch (await all handlers), Promise-based once(), event history/replay, wildcard listeners. Port of Java Guava EventBus / Python blinker.",
   "type": "module",

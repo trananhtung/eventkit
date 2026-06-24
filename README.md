@@ -4,13 +4,13 @@
 
 > Zero-dependency typed async EventEmitter. Compile-time event type safety, `async` dispatch (await all handlers in order), Promise-based `once`, event history + late-subscriber replay, wildcard listeners. Port of Java Guava EventBus / Python blinker.
 
-[![npm](https://img.shields.io/npm/v/eventkit)](https://www.npmjs.com/package/eventkit)
+[![npm](https://img.shields.io/npm/v/@billdaddy/eventkit)](https://www.npmjs.com/package/@billdaddy/eventkit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Install
 
 ```bash
-npm install eventkit
+npm install @billdaddy/eventkit
 ```
 
 ## Why
@@ -24,7 +24,7 @@ npm install eventkit
 ## Quick start
 
 ```typescript
-import { createEmitter } from "eventkit";
+import { createEmitter } from "@billdaddy/eventkit";
 
 // Declare your event map — names → argument tuples
 type AppEvents = {
